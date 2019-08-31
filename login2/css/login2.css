@@ -1,0 +1,271 @@
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+
+.form-signin {
+
+    width: 320px;
+    height: 480px;
+    margin: 50px auto; 
+    background-color: rgb(248, 248, 248);
+    border: 0.5px solid rgba(182, 182, 182, 0.8);
+    box-shadow: 0 3px 10px 8px #ccc;
+    -webkit-box-shadow: 0 3px 10px 8px #ccc;
+    -moz-box-shadow: 0 3px 10px 8px #ccc;
+}
+
+.form-signin fieldset {
+
+    border: none;
+}
+
+
+.form-signin fieldset legend {
+
+    font-size: 23px;
+    color: rgb(167, 39, 143);
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 6px;
+    font-weight: bold;
+}
+
+.label-user, .label-paswrd { /* texto ao lado do input, já que span e input é display inline */
+
+    display: block;
+    padding-top: 20px; /* afastar as duas caixas */
+}
+
+.email {  /* input do email */
+
+    width: 62%;
+    margin-top: 5px;
+    margin-left: 36px;
+    padding: 5px;
+    border-radius: 14px;
+    border: none;
+    background-color: rgb(224, 221, 221);
+}
+
+.pass {   /* input do password */
+    
+    width: 62%;
+    margin-left: 10px;
+    border-radius: 14px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(224, 221, 221);
+}
+
+.email:focus, .pass:focus {
+    background-color: rgb(233, 220, 216);
+    outline: none;
+}
+
+.s-email, .s-pass {
+
+    margin-left: 15px;
+    font-size: 14px;
+    color: rgb(87, 87, 87);
+}
+
+.rmb {
+
+    display: inline-block;
+    margin: 10px 13px;
+    border:  none;
+}
+
+.visuallyhidden {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+}
+
+
+.s-rmb {
+
+    font-size: 11px;
+    color: rgb(228, 78, 28);
+    vertical-align: middle;
+}
+
+.s-fgt {
+
+    font-size: 10px;
+    color: rgb(228, 78, 28);
+    margin-left: 27px;
+    text-decoration: none;
+}
+
+/* Label  */
+ 
+.new-check {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right:  5px;
+    margin-bottom: 6px;
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(223, 223, 223);
+    border-radius: 3px;
+ }
+
+ /* input checkbox vem logo depois do span com class no html */
+
+input[type="checkbox"]:checked + .new-check{
+
+    background-color: rgb(110, 110, 110);
+    position: relative;
+}
+
+input[type="checkbox"]:checked + .new-check:before {
+    
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border: 2px solid white;
+    transform: rotate(45deg);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:focus + .new-check {
+
+    box-shadow: 0 0 0 1px rgb(115, 158, 236);
+}
+
+.btn {
+
+    display: block;
+    width: 85%;
+    margin: 33px auto 0 auto;
+    padding: 11px;
+    cursor: pointer;
+    background-color: darksalmon; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom left, purple, darksalmon); 
+    color: white;
+    transition: all 0.7s;
+    border: none;
+    border-radius: 17px;
+    outline: none;
+}
+
+.btn:focus {
+    
+    box-shadow: 0 0 0 2px rgb(90, 122, 184);
+}
+
+.btn:hover {
+
+    box-shadow: 5px 10px 14px #888888;
+}
+
+.line, .buttons {
+
+    text-align: center;
+}
+
+.line span {
+
+    display: inline-block;
+    font-size: 12px; 
+    color: rgb(128, 128, 128);
+    padding-top: 23px;
+    padding-bottom: 20px;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 6%;
+    text-decoration: none;
+}
+
+.fa-facebook {
+
+    border: 1px solid rgb(80, 18, 69);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.fa-twitter {
+
+    border: 1px solid rgb(80, 18, 69);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.fa-linkedin {
+
+    border: 1px solid rgb(80, 18, 69);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa:focus {
+   box-shadow: 0 0 0 1px rgb(115, 158, 236);
+}
+
+.text-tpv {
+
+    font-size: 7px;
+    color: gray;
+    text-align: center;
+    display: block;
+    margin: 18px auto;
+}
+
+.terms-privacy {
+
+    text-decoration: none;
+    color: rgb(228, 78, 28);
+    padding-left: 3px;
+}
+
+.new-acc {
+
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px; 
+    margin-left: 1px;
+    color: white;
+    background-color: rgba(89, 61, 97, 0.527);
+}
+
+.new-acc:hover {
+    
+    color: rgba(252, 252, 252, 0.945);
+    background-color: rgb(148, 50, 91);
+}
+
+.terms-privacy:hover {
+
+    color: rgb(78, 16, 63);
+}
+
+.s-fgt:hover {
+
+    color: rgb(78, 16, 63);
+}
+
+
+
+
+
+
