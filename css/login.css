@@ -1,0 +1,259 @@
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(235, 235, 235);
+}
+
+.form-login {
+
+    width: 320px;
+    height: 480px;
+    margin: 50px auto; 
+    background-color: darksalmon; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom left, purple, darksalmon); 
+    box-shadow: 0 3px 10px 8px #ccc;
+    -webkit-box-shadow: 0 3px 10px 8px #ccc;
+    -moz-box-shadow: 0 3px 10px 8px #ccc;
+}
+
+.form-login fieldset {
+
+    border: none;
+}
+
+
+.form-login fieldset legend {
+
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    margin: auto; 
+    padding-top: 40px;
+    font-weight: bold;;
+}
+
+.label-user, .label-paswrd { 
+
+    display: block;
+    padding-top: 20px;
+}
+
+.email {
+
+    width: 62%;
+    margin-top: 5px;
+    margin-left: 36px;
+    padding: 5px;
+    border-radius: 14px;
+    border: none;
+}
+
+.pass {
+    
+    width: 62%;
+    margin-left: 10px;
+    border-radius: 14px;
+    padding: 5px;
+    border: none;
+}
+
+.email:focus, .pass:focus {
+    background-color: lightpink;
+    outline: none;
+}
+
+.s-email, .s-pass {
+
+    margin-left: 13px;
+    font-size: 14px;
+    color: white;
+}
+
+.rmb {
+
+    display: inline-block;
+    margin: 10px 13px;
+    border:  none;
+}
+
+.visuallyhidden {
+    position: absolute;
+    left: -999em;
+    width: 1em;
+    overflow: hidden;
+}
+
+.s-rmb {
+
+    font-size: 11px;
+    color: white;
+    vertical-align: middle;
+}
+
+.s-fgt {
+
+    font-size: 11px;
+    color: white;
+    margin-left: 27px;
+    text-decoration: none;
+}
+
+/* Label  */
+ 
+.new-check {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right:  5px;
+    margin-bottom: 6px;
+    border: 1px solid rgb(180, 180, 180);
+    background-color: rgb(223, 223, 223);
+    border-radius: 3px;
+}
+
+input[type="checkbox"]:checked + .new-check{
+
+    background-color: rgb(110, 110, 110);
+    position: relative;
+}
+
+input[type="checkbox"]:checked + .new-check:before {
+    
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border: 2px solid white;
+    transform: rotate(45deg);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"]:focus + .new-check {
+
+    box-shadow: 0 0 0 1px rgb(115, 158, 236);
+}
+
+.btn {
+
+    display: block;
+    width: 88%;
+    margin: 26px auto 0 auto;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(99, 15, 99);
+    color: white;
+    border: none;
+    border-radius: 17px;
+    outline: none;
+}
+
+.btn:focus {
+    
+    box-shadow: 0 0 0 2px rgb(90, 122, 184);
+}
+
+.btn:hover {
+
+    background-color: rgb(240, 240, 240);
+    color: rgb(99, 14, 99);
+}
+
+.line, .buttons {
+
+    text-align: center;
+}
+
+.line {
+
+    display: block;
+    font-size: 12px; 
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 6%;
+    text-decoration: none;
+}
+
+.fa-facebook {
+
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.fa-twitter {
+
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.fa-linkedin {
+
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa:focus {
+   box-shadow: 0 0 0 1px rgb(115, 158, 236);
+}
+
+.text-tpv {
+
+    font-size: 7px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.terms-privacy {
+
+    text-decoration: none;
+    color: rgb(41, 27, 44);
+}
+
+.new-acc {
+
+    display: inline-block;
+    text-align: left;
+    font-size: 13px;
+    margin: 11px 14px;
+    color: white;
+}
+
+.new-acc:hover, .s-fgt:hover {
+    
+    color: rgba(75, 51, 82, 0.863);
+    text-decoration: none;
+}
+
+.terms-privacy:hover {
+
+    color: rgb(172, 172, 172);
+}
+
+/* Media Query 334px */
+
+@media only screen and (max-width : 334px) {
+
+    .form-signin {
+        max-width: 100%;
+    }
+}
