@@ -4,41 +4,40 @@ body{
     background-color: rgb(235, 235, 235);
 }
 
-.form-signin {
+.form-login {
 
     width: 320px;
     height: 480px;
     margin: 50px auto; 
     background-color: rgb(248, 248, 248);
-    border: 0.5px solid rgba(182, 182, 182, 0.8);
     box-shadow: 0 3px 10px 8px #ccc;
     -webkit-box-shadow: 0 3px 10px 8px #ccc;
     -moz-box-shadow: 0 3px 10px 8px #ccc;
 }
 
-.form-signin fieldset {
+.form-login fieldset {
 
     border: none;
 }
 
 
-.form-signin fieldset legend {
+.form-login fieldset legend {
 
     font-size: 23px;
     color: rgb(167, 39, 143);
     text-align: center;
+    margin: auto; 
     padding-top: 40px;
-    padding-left: 6px;
     font-weight: bold;
 }
 
-.label-user, .label-paswrd { /* texto ao lado do input, já que span e input é display inline */
+.label-user, .label-paswrd { 
 
     display: block;
-    padding-top: 20px; /* afastar as duas caixas */
+    padding-top: 20px;
 }
 
-.email {  /* input do email */
+.email { 
 
     width: 62%;
     margin-top: 5px;
@@ -49,7 +48,7 @@ body{
     background-color: rgb(224, 221, 221);
 }
 
-.pass {   /* input do password */
+.pass {   
     
     width: 62%;
     margin-left: 10px;
@@ -66,7 +65,7 @@ body{
 
 .s-email, .s-pass {
 
-    margin-left: 15px;
+    margin-left: 13px;
     font-size: 14px;
     color: rgb(87, 87, 87);
 }
@@ -115,7 +114,7 @@ body{
     border-radius: 3px;
  }
 
- /* input checkbox vem logo depois do span com class no html */
+
 
 input[type="checkbox"]:checked + .new-check{
 
@@ -147,14 +146,13 @@ input[type="checkbox"]:focus + .new-check {
 .btn {
 
     display: block;
-    width: 85%;
-    margin: 33px auto 0 auto;
-    padding: 11px;
+    width: 88%;
+    margin: 26px auto 0 auto;
+    padding: 10px;
     cursor: pointer;
     background-color: darksalmon; /* For browsers that do not support gradients */
     background-image: linear-gradient(to bottom left, purple, darksalmon); 
     color: white;
-    transition: all 0.7s;
     border: none;
     border-radius: 17px;
     outline: none;
@@ -175,13 +173,13 @@ input[type="checkbox"]:focus + .new-check {
     text-align: center;
 }
 
-.line span {
+.line {
 
-    display: inline-block;
+    display: block;
     font-size: 12px; 
     color: rgb(128, 128, 128);
-    padding-top: 23px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 22px;
 }
 
 .fa {
@@ -238,33 +236,34 @@ input[type="checkbox"]:focus + .new-check {
 
 .new-acc {
 
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 15px;
-    padding: 12px; 
-    margin-left: 1px;
-    color: white;
-    background-color: rgba(89, 61, 97, 0.527);
+    display: inline-block;
+    text-align: left;
+    font-size: 13px;
+    margin: 11px 14px;
+    color: rgb(228, 78, 28);
 }
 
 .new-acc:hover {
     
-    color: rgba(252, 252, 252, 0.945);
-    background-color: rgb(148, 50, 91);
+    color: rgba(78, 16, 63);
+    text-decoration: none;
 }
 
-.terms-privacy:hover {
-
-    color: rgb(78, 16, 63);
-}
-
-.s-fgt:hover {
+.terms-privacy:hover, .s-fgt:hover {
 
     color: rgb(78, 16, 63);
 }
 
 
+
+/* Media Query 334px */
+
+@media only screen and (max-width : 334px) {
+
+    .form-login {
+        max-width: 100%;
+    }
+}
 
 
 
