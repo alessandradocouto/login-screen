@@ -1,4 +1,4 @@
-# Login Screen
+# Login Screen Responsivo
 
 ###  Sobre
 
@@ -8,17 +8,12 @@ gradient. Pode ser usado para sites, app para celular ou para desktop.
 
 ### Obstáculos
 
-Lidar com as diferentes resoluções de tela, reduzir tamanho do conteúdo
+Lidar com as diferentes resoluções de tela, reduzir o tamanho do conteúdo
 
-para caber na largura de tela.
+para encaixá-lo na largura da tela.
 
 ### O que eu aprendi
 
-Adquiri a habilidade de usar linear-gradient, box-shadow no CSS e
+Excelente exercício para praticar a estilização do checkbox e do linear-gradient. Além da falha de segurança que pode causar no
 
-praticar a estilização do checkbox e a insegurança que pode causar no
-
-sistema com o uso de target="_blank" para link externo sem o uso da tag
-
-rel="noopener".
-
+o uso da tag target="_blank" sem o uso da tag rel="noopener".
