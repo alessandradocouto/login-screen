@@ -11,3 +11,5 @@ Lidar com as diferentes resoluções de tela, reduzir o tamanho do conteúdo par
 ### O que eu aprendi
 
 Excelente exercício para praticar a estilização do checkbox e do linear-gradient. Além da falha de segurança que pode causar no o uso da tag target="_blank" sem o uso da tag rel="noopener".
+
+![](https://github.com/alessandradocouto/login-screen/blob/master/imagens/login-screen.jpg)
